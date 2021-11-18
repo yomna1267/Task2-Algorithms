@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+// Insertion sort implemntation
 void InsertionSort(int a[], int size)
 {
     clock_t start, end;
@@ -19,6 +20,7 @@ void InsertionSort(int a[], int size)
     printf("Total time taken by insertion sort is: %f\n", (double)(end-start)/CLOCKS_PER_SEC);
 
 }
+// QuickSort implementation
 int partition(int a[], int low, int high)
 {
     int pivot = a[high];
